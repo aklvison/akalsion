@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features= {"G99Login.feature"},
+	features= {"asebe.feature"},
 	
-	glue= {"G99Login.java"},
+	glue= {"asebe.java"},
 	
 	dryRun= true,
 	monochrome=false

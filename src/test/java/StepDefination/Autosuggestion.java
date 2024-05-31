@@ -1,7 +1,9 @@
 package StepDefination;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.bouncycastle.its.ITSValidityPeriod.Unit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +37,7 @@ public void identify_autosuggestion_webelement_and_click_on_whatsappweb() {
  List<WebElement> AllOptions=driver.findElements(By.xpath("//ul[@class='G43f7e']/li"));
 System.out.println(AllOptions.size());
 for(int i=0;i<AllOptions.size();i++) {
-	
+System.out.println(AllOptions.size());
 	System.out.println(AllOptions.get(i).getText());
 	if(AllOptions.get(i).getText().equalsIgnoreCase("whatsapp web")) {
 		AllOptions.get(i).click();
